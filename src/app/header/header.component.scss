@@ -1,0 +1,97 @@
+@import "../../shared_Css/Variables.scss";
+
+.header {
+  padding: 20px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    width: 50px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .links {
+    position: relative;
+    .icon {
+      width: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: end;
+      transition: $main-duration;
+      cursor: pointer;
+
+      span {
+        background-color: #222;
+        margin-bottom: 5px;
+        height: 2px;
+        width: 100%;
+      }
+      span:nth-child(2) {
+        width: 60%;
+        transition: $main-duration;
+      }
+    }
+    &:hover {
+      // ul {
+      //   display: block;
+      // }
+    }
+
+    .icon:hover span:nth-child(2) {
+      width: 100%;
+    }
+
+    ul {
+      transition: $main-duration;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      // background-color: #f6f6f6;
+      background-color: #eee;
+
+      // background-color: red;
+      position: absolute;
+      z-index: 1;
+      right: 0;
+      top: calc(100% + 15px);
+      // display: none;
+      min-width: 200px;
+      ::before {
+        content: "";
+        border-width: 13px;
+        border-style: solid;
+        border-color: transparent transparent #f6f6f6 transparent;
+        //   border-color: transparent transparent darkred transparent;
+        position: absolute;
+        right: -2px;
+        top: -25px;
+      }
+      li {
+        a {
+          text-decoration: none;
+          display: block;
+          padding: 15px;
+          color: #333;
+          //     color: green;
+          transition: $main-duration;
+          &:hover {
+            padding: 25px;
+          }
+        }
+      }
+      :not(:last-child) a {
+        border-bottom: 1px solid #ddd;
+      }
+    }
+  }
+}
+
+// //في Sass، عند استخدام الـ & داخل تحديد خاصية CSS، يتم استخدامه لإشارة إلى العنصر الأصلي الذي تم تحديده. هذا يسمح بكتابة CSS متقدمة بشكل أكثر فعالية.
+
+// لكن عند استخدام الـ ::before أو الـ ::after، فإنها تعتبر جزءًا من نفس العنصر الذي يتم تحديده وبالتالي لا يحتاج إلى استخدام الـ & لإشارته.
+
+// في الكود الذي قدمته، استخدمت الـ ::before داخل تحديد CSS لعنصر ul لإضافة عنصر تصميمي قبل المحتوى الداخلي للقائمة. ولكن، لا تحتاج إلى استخدام الـ & لأن الـ ::before هو جزء من عنصر ul نفسه.
+
+// لذلك، يمكنك كتابة الكود كما هو دون استخدام الـ &:

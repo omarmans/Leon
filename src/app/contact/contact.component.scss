@@ -1,0 +1,45 @@
+@import "../../shared_Css/Variables.scss";
+@import "../../shared_Css/classes.scss";
+.contact {
+  padding-top: $section-padding;
+  padding-bottom: $section-padding; //focus here?!!!!}
+  background-color: $section-background;
+  .info {
+    padding-top: $section-padding;
+    padding-bottom: $section-padding; //focus here?!!!!}
+    text-align: center;
+    p {
+      font-size: 40px;
+      font-weight: 800;
+      color: $secondary-color;
+      letter-spacing: -2px;
+      margin-bottom: 15px;
+    }
+    a.email {
+      text-decoration: none;
+      display: block;
+      font-size: 40px;
+      font-weight: 800;
+      color: $main-color;
+    }
+    .social {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      font-size: 16px;
+      i {
+        margin-left: 10px;
+        color: $secondary-color;
+      }
+      i:hover {
+        transform: scale(1.3);
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    p,
+    a {
+      font-size: 25px;
+    }
+  }
+}

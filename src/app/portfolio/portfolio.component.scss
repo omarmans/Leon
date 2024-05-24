@@ -1,0 +1,44 @@
+@import "../../shared_Css/Variables.scss";
+@import "../../shared_Css/classes.scss";
+.portfolio {
+  padding-top: $section-padding;
+  padding-bottom: $section-padding;
+  .por-content {
+    display: grid;
+    background-color: var($section-background);
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 80px;
+    .project {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      background-color: white;
+
+      transition: $main-duration;
+      &:hover {
+        transform: scale(1.1);
+
+        cursor: pointer;
+      }
+
+      .por-img {
+        img {
+          max-width: 100%;
+        }
+      }
+      .por-text {
+        padding: 20px;
+        //عشان الكلام لازق فشخ
+        h3 {
+          margin: 0;
+        }
+        p {
+          color: #777;
+          line-height: 1.6;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

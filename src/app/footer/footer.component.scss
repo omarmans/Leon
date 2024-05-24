@@ -1,0 +1,15 @@
+@import "../../shared_Css/Variables.scss";
+@import "../../shared_Css/classes.scss";
+.footer {
+  padding-top: $section-padding;
+  padding-bottom: $section-padding;
+  color: white;
+  padding: 30px 10px;
+  font-size: 20px;
+  background-color: $secondary-color;
+  text-align: center;
+  span {
+    font-weight: bold;
+    color: $main-color;
+  }
+}

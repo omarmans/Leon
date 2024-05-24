@@ -1,0 +1,25 @@
+.landing {
+  background-image: url("../../assets/img/landing/landing.jpg");
+  background-size: cover;
+  position: relative;
+  height: calc(100vh - 61px);
+}
+.landing .intro-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  width: 320px;
+  max-width: 100%;
+}
+.landing .intro-text h1 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 50px;
+  color: #10cab7;
+}
+.landing .intro-text p {
+  font-size: 19px;
+  line-height: 1.8;
+}/*# sourceMappingURL=landing.component.css.map */

@@ -1,0 +1,25 @@
+<div class="portfolio">
+  <div class="container">
+    <h2 class="special-heading">Portfolio</h2>
+    <p>If you do it right, it will last forever.</p>
+
+    <div class="por-content">
+      <div
+        class="project"
+        *ngFor="let pro of projects"
+        (click)="go_link(pro.link)"
+      >
+        <div class="por-img">
+          <img src="assets/img/port/{{ pro.src }}" alt="" />
+        </div>
+        <div class="por-text">
+          <h3>{{ pro.h3 }}</h3>
+          <p>
+            {{ pro.p }}
+          </p>
+          <!-- <a href="{{ pro.link }}" target="_blank">الرابط</a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

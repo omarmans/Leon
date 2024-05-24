@@ -1,0 +1,26 @@
+<div class="services">
+  <div class="container">
+    <h2 class="special-heading">Services</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+    <div class="services-content">
+      <div class="col">
+        <div class="srv" *ngFor="let srv of services">
+          <i class="{{ srv.i }}"></i>
+          <div class="text">
+            <h3>{{ srv.h3 }}</h3>
+            <p>
+              {{ srv.p }}
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- ######################## -->
+
+      <div class="col-img">
+        <div class="image img-col">
+          <img src="assets/img/Serv/{{ img }}" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

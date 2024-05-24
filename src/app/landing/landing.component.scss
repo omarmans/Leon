@@ -1,0 +1,31 @@
+@import "../../shared_Css/Variables.scss";
+
+// @use "../../variables/Variables.css" as *;
+//ليه use لا تعمل
+.landing {
+  background-image: url("../../assets/img/landing/landing.jpg");
+  background-size: cover;
+  position: relative;
+  height: calc(100vh - 61px);
+  // height: 100vh;
+
+  .intro-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 320px; //for sterth
+    max-width: 100%;
+    h1 {
+      margin: 0;
+      font-weight: bold;
+      font-size: 50px;
+      color: $main-color; // هنا يتم استخدام المتغير $main_colors
+    }
+    p {
+      font-size: 19px;
+      line-height: 1.8;
+    }
+  }
+}
